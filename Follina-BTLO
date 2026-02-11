@@ -1,0 +1,29 @@
+# Follina (CVE-2022-30190) – Incident Analysis
+
+## 📌 Overview
+This analysis covers the investigation of **Follina (CVE-2022-30190)**, a Microsoft Office remote code execution vulnerability abused via malicious documents.  
+The objective was to identify the infection vector, analyze attacker behavior, and extract relevant indicators of compromise (IOCs).
+
+---
+
+## 🧩 Initial Alert / Scenario
+- Suspicious Microsoft Office document execution
+- Possible exploitation of MSDT (Microsoft Support Diagnostic Tool)
+- No macros required for exploitation
+
+---
+
+## 🔍 Investigation Steps
+
+
+### 1️⃣ Document Analysis
+- Identified a malicious Office document as the initial attack vector
+- Observed external references inside the document pointing to a remote resource
+- Confirmed the document leverages a **ms-msdt:** URI scheme
+
+---
+
+### 2️⃣ Process Execution Analysis
+- Office application (`winword.exe`) spawned a child process
+- Detected execution of `msdt.exe`, which is abnormal in normal document usage
+- Process tree analysis confirmed exploitation flow:
