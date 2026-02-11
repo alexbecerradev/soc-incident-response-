@@ -19,7 +19,7 @@ The file hash was submitted to a malware analysis platform, where multiple secur
 
 This confirmed that the document was exploiting a known Microsoft Office remote code execution vulnerability.
 
-![VirusTotal detection results](images/follina-4.png)
+![VirusTotal detection results](../images/follina-4.png)
 
 The document was treated as an Office Open XML (OOXML) file and extracted for manual inspection.
 
