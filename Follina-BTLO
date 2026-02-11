@@ -18,7 +18,8 @@ The investigation started with a suspicious Microsoft Word document (sample.doc)
 The file hash was submitted to a malware analysis platform, where multiple security vendors flagged the document as malicious and associated it with CVE-2022-30190 (Follina).
 
 This confirmed that the document was exploiting a known Microsoft Office remote code execution vulnerability.
-![Alert details](images/follina(4).png)
+
+![Alert details](/images/follina(4).png)
 
 The document was treated as an Office Open XML (OOXML) file and extracted for manual inspection.
 
