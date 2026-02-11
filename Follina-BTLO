@@ -14,10 +14,6 @@ The objective was to identify the infection vector, analyze attacker behavior, a
 ---
 
 
-![test](../images/follina-1.png)
-![test](./images/follina-1.png)
-![test](images/follina-1.png)
-
 ## 🔍 Investigation Steps
 The investigation started with a suspicious Microsoft Word document (sample.doc).
 The file hash was submitted to a malware analysis platform, where multiple security vendors flagged the document as malicious and associated it with CVE-2022-30190 (Follina).
