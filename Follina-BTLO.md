@@ -34,7 +34,7 @@ XML configuration files (document.xml, settings.xml, webSettings.xml)
 
 This structure confirmed that the file was not a legacy binary document, but a modern OOXML-based file.
 
-![Alert details](./images/follina(2).png)
+![Alert details](./images/follina-2.png)
 
 The file word/_rels/document.xml.rels was analyzed to understand external relationships.
 
@@ -48,7 +48,7 @@ The relationship type was linked to an embedded object
 
 This behavior is abnormal for benign documents and is commonly abused in Follina attacks.
 
-![Alert details](./images/follina(3).png)
+![Alert details](./images/follina-3.png)
 
 The external relationship pointed to a remote HTML file hosted on an attacker-controlled server.
 
@@ -62,7 +62,7 @@ Achieve code execution without requiring macros
 
 This confirms exploitation via MSDT abuse, which is the core technique used in Follina.
 
-![Alert details](./images/follina(1).png)
+![Alert details](./images/follina-1.png)
 
 ### 1️⃣ Document Analysis
 - Identified a malicious Office document as the initial attack vector
